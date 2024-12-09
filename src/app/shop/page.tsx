@@ -10,9 +10,9 @@ const ProductDetailPage = () => {
   // Example product data (this would typically come from an API)
   const product = {
     id: 1,
-    name: "Men's T-Shirt",
+    name: "Men&apos;s T-Shirt", // Use &apos; to escape apostrophe
+    description: "This is a high-quality men&apos;s t-shirt made from soft cotton.", 
     price: 29.99,
-    description: "This is a high-quality men's t-shirt made from soft cotton.",
     image: '/main.png', // Main product image (your path here)
     smallImages: [
       '/main.png',
@@ -169,8 +169,6 @@ const ProductDetailPage = () => {
               </div>
               <p className="text-gray-600 text-left">This is an amazing product! I loved it and will buy again!</p>
             </div>
-
-            {/* Review Box 2 */}
             <div className="relative w-full h-[240px] p-8 border border-gray-300 rounded-tl-[20px] border-t-0 bg-white">
               <div className="flex justify-start mb-2">
                 {[...Array(5)].map((_, index) => (
@@ -187,44 +185,15 @@ const ProductDetailPage = () => {
                 ))}
               </div>
               <div className="flex items-center gap-2 mb-2">
-                <p className="text-[18px] font-[700] text-left">Jane Smith</p>
+                <p className="text-[18px] font-[700] text-left">John Doe</p>
                 <div className="w-5 h-5 rounded-full bg-green-500 flex justify-center items-center">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="white" className="w-3 h-3" viewBox="0 0 24 24" stroke="currentColor">
                     <path d="M9 11l3 3L22 4" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </div>
               </div>
-              <p className="text-gray-600 text-left">Great quality, would definitely recommend it to my friends!</p>
+              <p className="text-gray-600 text-left">This is an amazing product! I loved it and will buy again!</p>
             </div>
-
-            {/* Review Box 3 */}
-            <div className="relative w-full h-[240px] p-8 border border-gray-300 rounded-tl-[20px] border-t-0 bg-white">
-              <div className="flex justify-start mb-2">
-                {[...Array(5)].map((_, index) => (
-                  <svg
-                    key={index}
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill={index < 5 ? "currentColor" : "none"}
-                    className="w-6 h-6 text-yellow-500"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                  </svg>
-                ))}
-              </div>
-              <div className="flex items-center gap-2 mb-2">
-                <p className="text-[18px] font-[700] text-left">Emily Johnson</p>
-                <div className="w-5 h-5 rounded-full bg-green-500 flex justify-center items-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="white" className="w-3 h-3" viewBox="0 0 24 24" stroke="currentColor">
-                    <path d="M9 11l3 3L22 4" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-                </div>
-              </div>
-              <p className="text-gray-600 text-left">A great experience overall, I'm really happy with the purchase!</p>
-            </div>
-
-            {/* Review Box 4 */}
             <div className="relative w-full h-[240px] p-8 border border-gray-300 rounded-tl-[20px] border-t-0 bg-white">
               <div className="flex justify-start mb-2">
                 {[...Array(5)].map((_, index) => (
@@ -241,44 +210,15 @@ const ProductDetailPage = () => {
                 ))}
               </div>
               <div className="flex items-center gap-2 mb-2">
-                <p className="text-[18px] font-[700] text-left">Michael Brown</p>
+                <p className="text-[18px] font-[700] text-left">John Doe</p>
                 <div className="w-5 h-5 rounded-full bg-green-500 flex justify-center items-center">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="white" className="w-3 h-3" viewBox="0 0 24 24" stroke="currentColor">
                     <path d="M9 11l3 3L22 4" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </div>
               </div>
-              <p className="text-gray-600 text-left">Pretty good quality, though there was a minor issue with delivery time.</p>
+              <p className="text-gray-600 text-left">This is an amazing product! I loved it and will buy again!</p>
             </div>
-
-            {/* Review Box 5 */}
-            <div className="relative w-full h-[240px] p-8 border border-gray-300 rounded-tl-[20px] border-t-0 bg-white">
-              <div className="flex justify-start mb-2">
-                {[...Array(5)].map((_, index) => (
-                  <svg
-                    key={index}
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill={index < 5 ? "currentColor" : "none"}
-                    className="w-6 h-6 text-yellow-500"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                  </svg>
-                ))}
-              </div>
-              <div className="flex items-center gap-2 mb-2">
-                <p className="text-[18px] font-[700] text-left">Sarah Lee</p>
-                <div className="w-5 h-5 rounded-full bg-green-500 flex justify-center items-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="white" className="w-3 h-3" viewBox="0 0 24 24" stroke="currentColor">
-                    <path d="M9 11l3 3L22 4" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-                </div>
-              </div>
-              <p className="text-gray-600 text-left">Love the style, but the size ran a little small for me.</p>
-            </div>
-
-            {/* Review Box 6 */}
             <div className="relative w-full h-[240px] p-8 border border-gray-300 rounded-tl-[20px] border-t-0 bg-white">
               <div className="flex justify-start mb-2">
                 {[...Array(5)].map((_, index) => (
@@ -295,83 +235,114 @@ const ProductDetailPage = () => {
                 ))}
               </div>
               <div className="flex items-center gap-2 mb-2">
-                <p className="text-[18px] font-[700] text-left">Olivia White</p>
+                <p className="text-[18px] font-[700] text-left">John Doe</p>
                 <div className="w-5 h-5 rounded-full bg-green-500 flex justify-center items-center">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="white" className="w-3 h-3" viewBox="0 0 24 24" stroke="currentColor">
                     <path d="M9 11l3 3L22 4" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </div>
               </div>
-              <p className="text-gray-600 text-left">Overall, a good product. It could use more color options though.</p>
+              <p className="text-gray-600 text-left">This is an amazing product! I loved it and will buy again!</p>
             </div>
+            <div className="relative w-full h-[240px] p-8 border border-gray-300 rounded-tl-[20px] border-t-0 bg-white">
+              <div className="flex justify-start mb-2">
+                {[...Array(5)].map((_, index) => (
+                  <svg
+                    key={index}
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill={index < 4 ? "currentColor" : "none"}
+                    className="w-6 h-6 text-yellow-500"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                  </svg>
+                ))}
+              </div>
+              <div className="flex items-center gap-2 mb-2">
+                <p className="text-[18px] font-[700] text-left">John Doe</p>
+                <div className="w-5 h-5 rounded-full bg-green-500 flex justify-center items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="white" className="w-3 h-3" viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M9 11l3 3L22 4" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </div>
+              </div>
+              <p className="text-gray-600 text-left">This is an amazing product! I loved it and will buy again!</p>
+            </div>
+            <div className="relative w-full h-[240px] p-8 border border-gray-300 rounded-tl-[20px] border-t-0 bg-white">
+              <div className="flex justify-start mb-2">
+                {[...Array(5)].map((_, index) => (
+                  <svg
+                    key={index}
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill={index < 4 ? "currentColor" : "none"}
+                    className="w-6 h-6 text-yellow-500"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                  </svg>
+                ))}
+              </div>
+              <div className="flex items-center gap-2 mb-2">
+                <p className="text-[18px] font-[700] text-left">John Doe</p>
+                <div className="w-5 h-5 rounded-full bg-green-500 flex justify-center items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="white" className="w-3 h-3" viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M9 11l3 3L22 4" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </div>
+              </div>
+              <p className="text-gray-600 text-left">This is an amazing product! I loved it and will buy again!</p>
+            </div>
+
+            {/* More review boxes */}
+            {/* Add similar blocks as needed for other reviews */}
           </div>
         </div>
       </div>
-       {/* YOU MIGHT ALSO LIKE Section */}
-       <div className="mt-10">
+
+      {/* YOU MIGHT ALSO LIKE Section */}
+      <div className="mt-10">
         <h3 className="text-3xl font-semibold text-center font-[Integral CF]">YOU MIGHT ALSO LIKE</h3>
         <div className="flex justify-center gap-8 flex-wrap pt-32">
-  {/* Product 1 */}
-  <div className="w-64 bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 hover:shadow-2xl transition-all">
-    <img src="/p1.png" alt="Product 1" className="w-[295px] h-[298px] rounded-md object-cover" />
-    <div className="p-4">
-      <h3 className="text-xl font-semibold text-gray-900">Product 1</h3>
-      <p className="text-sm text-gray-600 mt-2">Description of the product goes here. It's stylish and comfortable.</p>
-      <button className="mt-4 bg-black text-white py-2 px-4 rounded-lg w-full hover:bg-gray-800 transition-all">Shop Now</button>
-    </div>
-  </div>
+          {/* Product 1 */}
+          <div className="w-64 bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 hover:shadow-2xl transition-all">
+            <img src="/p1.png" alt="Product 1" className="w-[295px] h-[295px] object-cover" />
+            <div className="p-4">
+              <h4 className="font-semibold text-lg mb-2">Men&apos;s Hoodie</h4>
+              <p className="text-gray-500 text-sm mb-2">Description of the product goes here.</p>
+              <p className="font-bold text-xl">$39.99</p>
+            </div>
+          </div>
+          <div className="w-64 bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 hover:shadow-2xl transition-all">
+            <img src="/p1.png" alt="Product 1" className="w-[295px] h-[295px] object-cover" />
+            <div className="p-4">
+              <h4 className="font-semibold text-lg mb-2">Men&apos;s Hoodie</h4>
+              <p className="text-gray-500 text-sm mb-2">Description of the product goes here.</p>
+              <p className="font-bold text-xl">$39.99</p>
+            </div>
+          </div>
+          <div className="w-64 bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 hover:shadow-2xl transition-all">
+            <img src="/p1.png" alt="Product 1" className="w-[295px] h-[295px] object-cover" />
+            <div className="p-4">
+              <h4 className="font-semibold text-lg mb-2">Men&apos;s Hoodie</h4>
+              <p className="text-gray-500 text-sm mb-2">Description of the product goes here.</p>
+              <p className="font-bold text-xl">$39.99</p>
+            </div>
+          </div>
+          <div className="w-64 bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 hover:shadow-2xl transition-all">
+            <img src="/p1.png" alt="Product 1" className="w-[295px] h-[295px] object-cover" />
+            <div className="p-4">
+              <h4 className="font-semibold text-lg mb-2">Men&apos;s Hoodie</h4>
+              <p className="text-gray-500 text-sm mb-2">Description of the product goes here.</p>
+              <p className="font-bold text-xl">$39.99</p>
+            </div>
+          </div>
 
-  {/* Product 2 */}
-  <div className="w-64 bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 hover:shadow-2xl transition-all">
-    <img src="/p2.png" alt="Product 2" className="w-[295px] h-[298px] rounded-md object-cover"/>
-    <div className="p-4">
-      <h3 className="text-xl font-semibold text-gray-900">Product 2</h3>
-      <p className="text-sm text-gray-600 mt-2">Description of the product goes here. It's stylish and comfortable.</p>
-      <button className="mt-4 bg-black text-white py-2 px-4 rounded-lg w-full hover:bg-gray-800 transition-all">Shop Now</button>
-    </div>
-  </div>
-
-  {/* Product 3 */}
-  <div className="w-64 bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 hover:shadow-2xl transition-all">
-    <img src="/p3.png" alt="Product 3" className="w-[295px] h-[298px] rounded-md object-cover"/>
-    <div className="p-4">
-      <h3 className="text-xl font-semibold text-gray-900">Product 3</h3>
-      <p className="text-sm text-gray-600 mt-2">Description of the product goes here. It's stylish and comfortable.</p>
-      <button className="mt-4 bg-black text-white py-2 px-4 rounded-lg w-full hover:bg-gray-800 transition-all">Shop Now</button>
-    </div>
-  </div>
-
-  {/* Product 4 */}
-  <div className="w-64 bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 hover:shadow-2xl transition-all">
-    <img src="/p4.png" alt="Product 4" className="w-[295px] h-[298px] rounded-md object-cover"/>
-    <div className="p-4">
-      <h3 className="text-xl font-semibold text-gray-900">Product 4</h3>
-      <p className="text-sm text-gray-600 mt-2">Description of the product goes here. It's stylish and comfortable.</p>
-      <button className="mt-4 bg-black text-white py-2 px-4 rounded-lg w-full hover:bg-gray-800 transition-all">Shop Now</button>
-    </div>
-  </div>
-</div>
-
-{/* View All Button Below the Product Cards */}
-<div className="flex justify-center w-full mt-12">
-  <button 
-    style={{
-      width: '218px',
-      height: '52px',
-      padding: '16px 54px',
-      gap: '12px',
-      borderRadius: '62px',
-      border: '1px solid black',
-      opacity: 1,
-    }}
-    className="view-all-btn bg-white text-black rounded-full border-zinc-900"
-  >
-    View All
-  </button>
-</div>
-</div>
+          {/* More products */}
+        </div>
       </div>
-   
+    </div>
   );
 };
 
