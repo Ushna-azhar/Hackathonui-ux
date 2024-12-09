@@ -29,7 +29,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      {/* Add Google Fonts in the <head> */}
       <head>
         <link
           href="https://fonts.googleapis.com/css2?family=Integral+CF&display=swap"
@@ -38,11 +37,11 @@ export default function RootLayout({
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      ><Navbar/>
+      >
+        <Navbar />
         {children}
-        <Footer/>
+        <Footer />
       </body>
-      
     </html>
   );
 }
